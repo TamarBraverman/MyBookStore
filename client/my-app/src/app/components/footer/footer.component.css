@@ -1,0 +1,16 @@
+div{
+    height: 9vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #de9f54;
+    border-top: black;
+    border-style: groove;
+}
+p{
+    color: black;
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 3vh;
+}

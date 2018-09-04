@@ -1,0 +1,120 @@
+/* form{
+    max-width: 250px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    display: inline-block;
+    min-width: 300px;
+    border-radius: 3px;
+}
+.btn-default{
+min-height: 40px;
+background-color: #333;
+margin-top: 25px;
+}
+
+
+p{
+    font-size:1.3em;
+    color:red;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.register {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+  margin-top: -15vh;
+}
+
+/* Reset top and bottom margins from certain elements */
+.register-header,
+.register p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.register-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #f5ab21;
+}
+
+.register-header {
+    background: #f5ab21;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.register-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .register-container is defined with p tags */
+.register p {
+  padding: 12px;
+}
+
+.register input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+
+
+}
+
+.register input[type="email"],
+.register input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.register input[type="email"]:focus,
+.register input[type="password"]:focus {
+  border-color: #888;
+}
+
+.register input[type="submit"] {
+    background: #f5ab21;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register input[type="submit"]:hover {
+    background: #f5ab21;
+}
+
+.register input[type="submit"]:focus {
+    background: #f5ab21;
+}
+.register input{
+    margin-top: 1vh;
+}

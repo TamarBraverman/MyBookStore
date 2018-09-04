@@ -1,0 +1,23 @@
+
+<div class="register">
+        <div class="register-triangle"></div>
+    
+        <h2 class="register-header">Register</h2>
+    
+        <form [formGroup]="formGroup" (ngSubmit)="submitRegister()" class="register-container">
+    
+            <div *ngFor="let controlName of obj.keys(formGroup.controls)">
+                <div class="formGroup">
+                    <input formControlName="{{controlName}}" class="form-control" placeholder="{{controlName}}"/>
+    
+                    <div *ngIf="formGroup.controls[controlName].errors && formGroup.controls[controlName].touched" >
+                        <small class="form-text text-muted" *ngFor="let err of obj.values(formGroup.controls[controlName].errors)">{{err}}</small>
+                    </div>
+                
+                </div>
+    
+            </div>
+            <input type="submit" value="Register" [disabled]="formGroup.invalid" class="btn btn-primary" />
+    
+        </form>
+    </div>

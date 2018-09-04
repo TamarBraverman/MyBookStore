@@ -1,0 +1,103 @@
+
+img{
+    float: right;
+    margin-left: 43vh;
+    border-radius: 50%;
+    width: 9vw;
+    height: 17vh;
+    margin-right: 4vh;
+    margin-top: -13vh;
+        
+}
+body {
+    margin: 0 auto;
+  }
+  
+  hr {
+    margin: 0 auto;
+    border: 2px solid black;
+   
+  }
+  
+  #nav {
+    padding-bottom: 60px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 10px solid black;
+    border-top: 2px solid black;
+    transition: all 0.2s ease;
+  
+  }
+  
+  #nav h1 {
+    margin: 0 auto;
+    /* transition: all 0.2s ease; */
+  }
+  
+  #nav .logo {
+    font-family: sans-serif;
+    float: left;
+    padding: 13px;
+   
+  }
+  
+  #nav a {
+    float: right;
+    text-decoration: none;
+    color: black;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition: all 0.2s ease;
+    border-bottom: 0px solid black;
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+  }
+  
+  #nav a:hover {
+    border-top: 10px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    bottom: -4px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 24px;
+  }
+  
+  #nav a:active {
+    background: black;
+    color: white;
+    bottom: 0px;
+  }
+  #nav h1:hover {
+    font-size: 35px;
+  }
+  #nav{
+   height: 123px;
+
+  }
+  img{
+    margin-left: 35vh;
+    margin-top: -9vh;
+    border-style: solid;
+    border-color: #ff8600;
+    border-width: initial;
+  }
+  h1{
+    font-size: 7vh;
+    margin-top: -8vh;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #ff5200, 0 0 5px #8b0b00;
+    
+  }
+  img[_ngcontent-c1] {
+    margin-left: 43vh;
+    margin-top: -9vh;
+  }

@@ -1,0 +1,7 @@
+<p>search:</p>
+<input type="text" (keyup)="getListProducts($event.target.value)">
+<div>
+    <div *ngFor="let book of listFilter">
+        <app-product-preview [book]="book"></app-product-preview>
+    </div>
+</div>

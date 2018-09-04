@@ -1,0 +1,23 @@
+<body>
+    <div id="nav">
+        <div class="logo" *ngIf="user">
+            <h1>Hello {{user.userName}}</h1>
+            <img src="https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg"
+            />
+
+        </div>
+        <div class="logo" *ngIf="!user">
+            <h1>Hello user</h1>
+            <img  src="http://static.eharmony.com/blog/wp-content/uploads/2010/04/eHarmony-Blog-profile-picture.jpg" />
+        </div>
+        <a href="#" class="navlink" routerLink="/account">
+            ACCOUNT
+        </a>
+        <a href="#" class="navlink" routerLink="/products">
+            PRODUCTS
+        </a>
+        <a href="#" class="navlink" *ngIf="user" routerLink="/cart">
+            CART
+        </a>
+    </div>
+</body>

@@ -1,0 +1,14 @@
+
+<body>
+    <div id="nav">
+        <a href="#" class="navlink" *ngIf="!user" routerLink="/account/register">
+            register
+        </a>
+        <a href="#" class="navlink" *ngIf="!user" routerLink="/account/login">
+            login
+        </a>
+
+        <button *ngIf="user" (click)="logout()">logout</button>
+    </div>
+</body>
+<router-outlet></router-outlet>

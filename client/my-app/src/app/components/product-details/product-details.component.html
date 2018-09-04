@@ -1,0 +1,33 @@
+
+
+<div class="item  col-xs-4 col-md-3">
+  <div class="thumbnail">
+    <img class="group list-group-image" src="http://absfreepic.com/absolutely_free_photos/small_photos/book-shelf-3264x2448_35867.jpg"
+      alt="" />
+    <!-- <img class="group list-group-image" src="{{book['volumeInfo'].imageLinks}}" alt=""> -->
+    <div class="category">
+      <h5 class="category-name">{{book.title}}</h5>
+    </div>
+    <div class="caption">
+      <h4 class="group inner list-group-item-heading">
+        {{book.subtitle}}
+      </h4>
+      <label>authors</label>
+      <p>{{book.authors}}</p>
+      <label>publisher:</label>
+      <p>{{book.publisher}}</p>
+      <label>publishedDate:</label>
+      <p>{{book.publishedDate}}</p>
+      <label>description:</label>
+      <p>{{book.description}}</p>
+      <label>pageCount:</label>
+      <p>{{book.pageCount}}</p>
+      <div class="row">
+        <div class="btn-group">
+          <button id="cart" *ngIf="user" (click)="AddToCart()">add to your cart</button>
+          <button id="back" (click)="backToProduct()">back to product</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

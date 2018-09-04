@@ -1,0 +1,116 @@
+/* #wrapper{
+    height: 68vh;
+}
+.jumbotron{
+    background-color: #0dc3da;
+    height: 12vh;
+}
+p{
+  
+    color: #1111da;
+    font-size: 10vh;
+    display: inline;
+    text-align: center;
+    margin-left: 88vh;
+
+}
+a{
+    color: #152ca5;
+    font-size: 2vh;
+}
+button{
+    background-color: #adadca;
+    height: 6vh;
+    width: 7vw;
+    border-radius: 13%;
+} */
+
+img{
+    float: right;
+
+    border-radius: 50%;
+    width: 9vw;
+    height: 17vh;
+    margin-right: 4vh;
+    margin-top: -13vh;
+}
+body {
+    margin: 0 auto;
+  }
+  
+  hr {
+    margin: 0 auto;
+    border: 2px solid black;
+   
+  }
+  
+  #nav {
+    padding-bottom: 60px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease;
+  
+  }
+  
+  #nav h1 {
+    margin: 0 auto;
+    transition: all 0.2s ease;
+  }
+  
+  #nav .logo {
+    font-family: sans-serif;
+    float: left;
+    padding: 13px;
+   
+  }
+  
+  #nav a {
+    float: right;
+    text-decoration: none;
+    color: black;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition: all 0.2s ease;
+    border-bottom: 0px solid black;
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+  }
+  
+  #nav a:hover {
+    border-top: 10px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    bottom: -4px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 24px;
+  }
+  
+  #nav a:active {
+    background: black;
+    color: white;
+    bottom: 0px;
+  }
+  #nav h1:hover {
+    font-size: 35px;
+  }
+  #nav{
+   height: 123px;
+
+  }
+button{
+    height: 7vh;
+    width: 15vh;
+    margin-top: 2vh;
+    margin-left: 125vh;
+    background-color: #d0a470;
+}
+
