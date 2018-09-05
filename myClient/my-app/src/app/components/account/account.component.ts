@@ -12,7 +12,7 @@ export class AccountComponent implements OnInit {
   constructor(private usersService: UsersService) {
     this.user = this.usersService.checkUserLogin();
     console.log(this.user);
-    this.usersService.subjectUser.subscribe(//listen to subject user
+    this.usersService.subjectUser.subscribe(//listen to subject user and change
       {
         next: (v: any) => {
           this.user = v;
