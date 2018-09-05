@@ -14,7 +14,7 @@ export class ProductPreviewComponent implements OnInit {
   }
   details()//router to details
   {
-    this.router.navigate(["/productDetails",this.book.volumeInfo]);
+    this.router.navigate(["/BookStore/productDetails",this.book.volumeInfo]);
   }
 
 }

@@ -31,6 +31,6 @@ export class ProductDetailsComponent implements OnInit {
     this.booksService.AddToCart(this.book);
   }
   backToProduct() {
-    this.router.navigate(["/products"]);
+    this.router.navigate(["/BookStore/products"]);
   }
 }

@@ -14,25 +14,25 @@ import { CartProductComponent } from './components/cart-product/cart-product.com
 import{AuthGuardCart,AuthGuardlogin}from './shared/auth.guard'
 const appRoutes: Routes = [
 
-    { path: 'header', component: HeaderComponent },
-    { path: 'main', component: MainComponent },
+    { path: 'BookStore/header', component: HeaderComponent },
+    { path: 'BookStore/main', component: MainComponent },
     {
-        path: 'account', component: AccountComponent, children: [
+        path: 'BookStore/account', component: AccountComponent, children: [
             {path:'login',component:LoginComponent,canActivate: [AuthGuardlogin]},
             {path:'register',component:RegisterComponent,canActivate: [AuthGuardlogin]}
         ]
     },
-    { path: 'products', component:ProductsComponent, children:[
+    { path: 'BookStore/products', component:ProductsComponent, children:[
         {path:'productPreview', component:ProductPreviewComponent}
     ] },
-    { path: 'cart', component: CartComponent  ,canActivate: [AuthGuardCart] ,children:[
+    { path: 'BookStore/cart', component: CartComponent  ,canActivate: [AuthGuardCart] ,children:[
         {path:'cartProduct' ,component:CartProductComponent}
     ]},
-    { path: 'productDetails', component: ProductDetailsComponent },
-    { path: 'home', component: HomeComponent },
-    { path: '', component: HomeComponent },
+    { path: 'BookStore/productDetails', component: ProductDetailsComponent },
+    { path: 'BookStore/home', component: HomeComponent },
+    { path: 'BookStore', component: HomeComponent },
     { path: '**', component: HomeComponent },
-    { path: 'footer', component: FooterComponent }
+    { path: 'BookStore/footer', component: FooterComponent }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

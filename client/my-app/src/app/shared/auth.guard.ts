@@ -13,7 +13,7 @@ export class AuthGuardlogin implements CanActivate {
             return true;
         }
         //logged in so redirect to login and register page with the return url
-        this.router.navigate(["/account"]);
+        this.router.navigate(["/BookStore/account"]);
         return false;
     }
 }
@@ -28,7 +28,7 @@ export class AuthGuardCart implements CanActivate {
             return true;
         }
         // not logged in so redirect to register page with the return url
-        this.router.navigate(["/account/register"]);
+        this.router.navigate(["/BookStore/account/register"]);
         return false;
     }
 }
