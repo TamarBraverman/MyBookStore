@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { FormGroup, FormControl, ValidatorFn } from '@angular/forms';
-import{UsersService}from'../../../../shared/services/users.service';
-import { User } from '../../../../shared/models/user';
+import{UsersService}from'../../shared/services/users.service';
+import { User } from '../../shared/models/user';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

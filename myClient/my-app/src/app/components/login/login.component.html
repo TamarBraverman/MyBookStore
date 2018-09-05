@@ -9,8 +9,8 @@
 
         <div *ngFor="let controlName of obj.keys(formGroup.controls)">
             <div class="formGroup">
-                <input formControlName="{{controlName}}" class="form-control" placeholder="{{controlName}}"/>
-
+                <input *ngIf="controlName=='Password'" type="password" formControlName="{{controlName}}" class="form-control" placeholder="{{controlName}}"/>
+                <input *ngIf="controlName!='Password'" formControlName="{{controlName}}" class="form-control" placeholder="{{controlName}}"/>
                 <div *ngIf="formGroup.controls[controlName].errors && formGroup.controls[controlName].touched" >
                     <small class="form-text text-muted" *ngFor="let err of obj.values(formGroup.controls[controlName].errors)">{{err}}</small>
                 </div>

@@ -7,8 +7,8 @@ import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { LoginComponent } from './components/account/components/login/login.component';
-import { RegisterComponent } from './components/account/components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 import { ProductPreviewComponent } from './components/product-preview/product-preview.component';
 import { CartProductComponent } from './components/cart-product/cart-product.component';
 import{AuthGuardCart,AuthGuardlogin}from './shared/auth.guard'
